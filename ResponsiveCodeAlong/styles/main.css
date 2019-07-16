@@ -2,11 +2,11 @@
     box-sizing: border-box;
     padding: 0;
     margin:0;
-    border:1px solid grey;
+    /* border:1px solid grey; */
 }
 /* General Style */ 
 body{
-    line-height:1.5;
+    line-height:2;
 }
 section{
     padding:4% 0;
@@ -17,10 +17,34 @@ h2{
 }
 a{
     text-decoration:none;
+    color:#fff;
+}
+hr{
+    width:25%;
+    border-bottom:2px solid black;
+}
+/* Helper Classes */
+div.txt{
+    width:15%;
+    margin:2% 1%;
+}
+.flexContainer{
+    display:flex;
+    justify-content: flex-end;
+}
+.left{
+    text-align:right;
+}
+.left hr{
+    display:inline-block;
+    text-align:right;
+    margin-right:0;
 }
 /* Header Section Styles*/
 header{
     background-color:#6dccaa;
+    color:#fff;
+    padding-bottom:2%;
 }
 .mobShow{
     display:none;
@@ -29,11 +53,19 @@ nav{
     display:flex;
     justify-content:space-between;
 }
+.links{
+    width:30%;
+    display:flex;
+    justify-content: space-around;
+}
+.leftNav{
+    margin-left:3%;
+}
 .middleHeader{
     display:flex;
     justify-content:center;
     align-items:center;
-    height:70vh;
+    height:60vh;
 }
 /*About Section Styles*/
 .topAbout{
@@ -48,6 +80,8 @@ nav{
 .bottomAbout div{
     width:50%;
 }
+
+
 /*Food Section Styles*/
 #food{
     background-color:#ffcf3e;
